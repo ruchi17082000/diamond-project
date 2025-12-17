@@ -1,0 +1,106 @@
+<div class="login">
+  <div class="wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="loginInner1">
+            <div class="log-logo m-b-20 text-center">
+              <img src="assets/logo/{{ logo_img }}.png" class="logo-login" />
+            </div>
+            <div class="featured-box-login featured-box-secundary default">
+              <h4 st class="text-center" style="font-size: 1.5rem">
+                LOGIN <i class="fas fa-hand-point-down"></i>
+              </h4>
+              <!-- alert -->
+              <div *ngIf="res_error" class="alert alert-danger" role="alert">
+                {{ res_error }}
+              </div>
+              <form
+                role="form"
+                autocomplete="off"
+                [formGroup]="loginForm"
+                (ngSubmit)="onSignInClick()"
+              >
+                <div class="form-group m-b-20">
+                  <input
+                    placeholder="Username/Mobile No."
+                    type="text"
+                    class="form-control"
+                    aria-required="true"
+                    aria-invalid="false"
+                    formControlName="username"
+                  />
+                  <i class="fas fa-user"></i>
+                  <!---->
+                  <small class="text-danger" style="display: none"></small>
+                </div>
+                <div class="form-group m-b-20">
+                  <input
+                    name="Password"
+                    placeholder="Password"
+                    type="password"
+                    class="form-control"
+                    aria-required="true"
+                    aria-invalid="false"
+                    formControlName="password"
+                  />
+                  <i class="fas fa-key"></i>
+                  <!---->
+                  <small class="text-danger" style="display: none"></small>
+                </div>
+                <div class="form-group text-center mb-0">
+                  <button
+                    type="submit"
+                    class="btn btn-submit btn-login"
+                    [disabled]="loginButtonDisable"
+                  >
+                    Login
+                    <i class="ml-2 fas fa-sign-in-alt"></i>
+                  </button>
+                </div>
+                <p
+                  class="font-weight-bold"
+                  style="font-size: 12px"
+                  class="recaptchaTerms"
+                >
+                  This site is protected by reCAPTCHA and the Google
+                  <a href="https://policies.google.com/privacy"
+                    >Privacy Policy</a
+                  >
+                  and
+                  <a href="https://policies.google.com/terms"
+                    >Terms of Service</a
+                  >
+                  apply.
+                </p>
+                <div class="mt-2 text-center download-apk">
+                  <p class="mt-1">
+                    <a
+                      href="mailto:info@{{ logo_img }}.com"
+                      class="mail-link"
+                      style="font-size: 16px"
+                      >info@{{ logo_img }}.com</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+
+            <div
+              *ngIf="logo_img === 'diamond222'"
+              [routerLink]="['/register']"
+              class="text-warning font-weight-bold text-center mt-2"
+              style="
+                text-decoration: underline;
+                cursor: pointer;
+                color: #ffff !important;
+              "
+            >
+              <p>Register</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

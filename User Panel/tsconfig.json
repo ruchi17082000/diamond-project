@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "app/*": ["src/app/*"],
+      "services/*": ["src/app/services/*"],
+      "model/*": ["src/app/model/*"],
+      "header/*": ["src/app/header/*"]
+    },
+    "types": [
+      "jquery",
+      "datatables.net",
+      "mocha",  // Add this line to include Mocha types
+      "chai"  // Add chai here
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ]
+}

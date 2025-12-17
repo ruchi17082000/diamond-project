@@ -1,0 +1,11 @@
+@import "/src/app/dashboard/dashboard.component.scss";
+.card
+{
+    padding: 10px !important;
+    border: none !important;
+    padding-inline-start:0px !important;
+}
+
+.card:last-child {
+    padding-right: 0% !important;
+  }

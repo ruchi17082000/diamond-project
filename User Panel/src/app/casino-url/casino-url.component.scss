@@ -1,0 +1,62 @@
+@import "/src/app/match-detail/match-detail.component.scss";
+.header{
+    background-color:black;
+    height: 70px;
+  }
+  
+  
+ *,*::before, *::after {
+      box-sizing: border-box;
+  }
+  
+  @keyframes rotate {
+      100% {
+          transform: rotate(1turn);
+      }
+  }
+  
+  .addcard {
+      position: relative;
+      z-index: 0;
+      width:150px;
+      height: 50px;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 1rem;
+  
+      &::before {
+          content: '';
+          position: absolute;
+          z-index: -2;
+          left: -106%;
+      top: -111%;
+      width: 317%;
+      height: 317%;
+        //   background-color: #399953;
+          background-repeat: no-repeat;
+          background-size: 50% 50%, 50% 50%;
+          background-position: 0 0, 80% 0, 80% 80%, 0 80%;
+          background-image:linear-gradient(#fff, #fff),linear-gradient(#009ffb, #009ffb);
+          animation: rotate 4s linear infinite;
+      }
+  
+      &::after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          left: 6px;
+          top: 6px;
+          width: calc(100% - 12px);
+          height: calc(100% - 12px);
+          background: #2E3439;
+          border-radius: 5px;
+      }
+  }
+
+  .featured-box-detail {
+    max-width: 100% !important;
+    -ms-flex: 0 0 100% !important;
+    flex: 0 0 100% !important;
+    min-height: 70vh;
+    
+}

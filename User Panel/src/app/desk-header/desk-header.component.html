@@ -1,0 +1,64 @@
+<div class="desktopmain-main">
+  <div class="header-bottom col-md-12">
+    <nav class="navbar navbar-expand-md btco-hover-menu">
+      <button type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--desktop_header  -->
+      <div class="collapse navbar-collapse">
+        <ul class="list-unstyled navbar-nav">
+          <li class="nav-item" [routerLink]="['/home']" routerLinkActive="active">
+            <a class="router-link-exact-active router-link-active"><b>Home</b></a>
+          </li>
+          <li class="nav-item" [routerLink]="['/gamelist/cricket']" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""><b>Cricket</b></a>
+          </li>
+          <!-- <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""
+              ><b class="new-launch-text">Election 2022</b></a
+            >
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""
+              ><b class="new-launch-text">Fifa Cup - 22</b></a
+            >
+          </li> -->
+          <li class="nav-item" routerLinkActive="active" [routerLink]="['/gamelist/tennis']">
+            <a href="javascript:void(0)" class=""><b>Tennis</b></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active" [routerLink]="['/gamelist/football']">
+            <a href="javascript:void(0)" class=""><b>Football</b></a>
+          </li>
+          <!-- <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""><b>Table Tennis</b></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""><b>Kabaddi</b></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""><b>Basketball</b></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a href="javascript:void(0)" class=""><b>Volleyball</b></a>
+          </li> -->
+          <li class="nav-item" routerLinkActive="active" (click)="openCasino('', '92038', 'baccarat')">
+            <a href="javascript:void(0)" class=""><span><b>Baccarat</b></span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active" (click)="openCasino('', '56967', '32Card')">
+            <a href="javascript:void(0)" class=""><span><b>32 Cards</b></span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active" (click)="openCasino('', '67640', 'Teenpatti')">
+            <a href="javascript:void(0)" class=""><span><b>Teenpatti</b></span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active" (click)="openCasino('', '67564', 'Poker')">
+            <a href="javascript:void(0)" class=""><span><b>Poker</b></span></a>
+          </li>
+          <li class="nav-item" routerLinkActive="active" (click)="openCasino('', '98789', 'Lucky7')">
+            <a href="javascript:void(0)" class=""><span><b>Lucky 7</b></span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
